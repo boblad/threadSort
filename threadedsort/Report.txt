@@ -1,0 +1,19 @@
+std::sort with 100000 elements took 0.00284202 seconds.
+sorting with a threaded quicksort of size 100000 elements took 0.0368636 seconds with 8 threads
+std::find of size 100000 elements took 5.66e-07 seconds.
+finding with a threaded linear find of 100000 elements took 0.000584639 seconds with 8 threads
+Sorting Stats
+Speed Up = 0.0770955
+Efficiency = 0.00963694
+Finding Stats
+Speed Up = 0.000968119
+Efficiency = 0.000121015
+
+With 100000 elements my quick sort algorithm was slower. My linear Search
+was roughly the same time as the std::find algorithm. I think that my quick
+sort algorithm was slower because of my merge sort process at the end.
+I broke up my vector into 8 different pieces and sorted them using a thread.
+When this was finished I had 8 sorted sections of my vector and the time that it
+took to sort my thread into 8 sections was faster than the std::sort. the part
+that took a toll  on my timing was as soon as I had all of my sorted sections,
+I jammed the array into a single merge sort which destroyed the time. 

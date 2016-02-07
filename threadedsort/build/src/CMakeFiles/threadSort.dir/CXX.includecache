@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bryantoblad/Documents/3100/threadSort/src/main.cpp
+mutex
+-
+pthread.h
+-
+stdio.h
+-
+ctype.h
+-
+iostream
+-
+thread
+-
+unistd.h
+-
+random
+-
+cmath
+-
+chrono
+-
+string
+-
+queue
+-
+cstdlib
+-
+algorithm
+-
+
